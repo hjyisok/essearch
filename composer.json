@@ -1,0 +1,35 @@
+{
+    "name": "nansoon/essearch",
+    "description": "use sql search elasticSearch",
+    "type": "library",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/hjyisok/essearch",
+    "keywords": ["sql", "elasticSearch", "dsl"],
+    "authors": [
+        {
+            "name": "nansoon",
+            "email": "nansoon@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^6.0"
+    },
+    "require-dev": {
+        "greenlion/php-sql-parser": "^4.3"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "EsSearch\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EsSearch\\Tests\\": "tests/"
+        }
+    }
+}
